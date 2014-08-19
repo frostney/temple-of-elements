@@ -1,4 +1,4 @@
-temple-of-elements
+Temple of Elements
 ==================
 
 js13k game
