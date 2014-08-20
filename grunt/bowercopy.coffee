@@ -6,4 +6,4 @@ module.exports =
       'build/lib/animframe.js': 'animframe/dist/animframe.js'
       'build/lib/mixedice.js': 'mixedice/dist/mixedice.js'
       'build/lib/eventmap.js': 'eventmap/dist/eventmap.js'
-      'build/lib/gameboard.js': 'jquery/dist/gameboard.js'
+      'build/lib/gameboard.js': 'gameboard/dist/gameboard.js'
