@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "gameboard": "~0.1.0",
-    "almond": "~0.2.9"
+    "amara": "~0.1.0",
+    "mixedice-lowfat": "~0.1.0",
+    "tilemap": "~0.1.0"
   }
 }
