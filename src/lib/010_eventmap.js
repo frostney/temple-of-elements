@@ -1,4 +1,4 @@
-define('eventmap', function () {
+(function(root) {
   var EventMap = function () {
     this.events = {};
   };
@@ -32,4 +32,6 @@ define('eventmap', function () {
       }
     });
   };
-});
+
+  root.EventMap = EventMap;
+})(window);
