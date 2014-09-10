@@ -4,8 +4,8 @@ html(lang="en")
         link(rel='stylesheet', type='text/css', href='style/style.css')
 
         script(src='//localhost:35729/livereload.js')
-        script(src='lib/main.js')
+        script(src='lib.js')
     body
-        canvas#viewport.viewport
+        canvas#viewport.viewport(width=600, height=600)
 
         script(src='app.js')
