@@ -1,4 +1,4 @@
-(function(root) {
+(function (root) {
   var EventMap = function () {
     this.events = {};
   };
@@ -27,11 +27,18 @@
     var args = [].slice.call(arguments, 1);
 
     ['before', 'now', 'after'].forEach(function (val) {
-      if (this.events[name] && this.events[name][val]) {
-        this.events[name][val].apply({}, args);
-      }
-    });
+        if (this.events && this.events[name] && this.events[name][val]) {
+          this.events[name][val].forEach(function (cb) {
+            cb.apply({}, args);
+          });
+        }
+      }, this);
+  };
+
+  Event.prototype.clear = function() {
+    this.events = {};
   };
 
   root.EventMap = EventMap;
-})(window);
+})
+(window);
