@@ -3,7 +3,7 @@ module.exports =
     sourceMap: true
   lib:
     files:
-      'build/lib/main.js': 'build/lib/*.js'
+      'build/lib.js': 'build/lib/*.js'
   main:
     files:
       'build/app.js': 'build/app/*.js'

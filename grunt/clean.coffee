@@ -1,3 +1,3 @@
 module.exports =
-  lib: ['build/lib/*.js', '!build/lib/main.js']
+  lib: ['build/lib/*.js']
   app: ['build/app/*.js']
